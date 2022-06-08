@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import SurveyComponent from './SurveyComponent';
 
-ReactDOM.render(<SurveyComponent />, document.getElementById('surveyElement'));
+const root = createRoot(document.getElementById("surveyElement"));
+root.render(<SurveyComponent />);

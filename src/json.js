@@ -161,7 +161,9 @@ export const json = {
                 "colCount": 1,
                 "choices": [
                   "Carbon",
-                  "Green"
+                  "Green",
+                  "Yellow",
+                  "Red"
                 ]
               },
               {
@@ -199,18 +201,22 @@ export const json = {
           "elements": [
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "enter_lead_autocross_time",
               "title": "Time Student Enters Autocross Car"
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "exit_lead_autocross_time",
               "title": "Time Student Exits Autocross Car"
             },
             {
               "type": "text",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "best_lap_time",
               "title": "Best Lap Time After Penalties"
             }
@@ -237,18 +243,22 @@ export const json = {
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "enter_autocross_time",
               "title": "Time Student Enters Autocross Car"
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "exit_autocross_time",
               "title": "Time Student Exits Autocross Car"
             },
             {
               "type": "text",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "best_lap_time",
               "title": "Best Lap Time After Penalties"
             }
@@ -279,13 +289,15 @@ export const json = {
           "elements": [
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "enter_lead_follow_time",
               "title": "Time Student Enters Autocross Car"
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "exit_lead_follow_time",
               "title": "Time Student Exits Autocross Car"
             }
@@ -312,13 +324,15 @@ export const json = {
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "enter_follow_time",
               "title": "Time Student Enters Follow Car"
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "exit_follow_time",
               "title": "Time Student Exits Follow Car"
             }
@@ -349,13 +363,15 @@ export const json = {
           "elements": [
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "enter_lead_skid_pad_time",
               "title": "Time Student Enters Skid Pad Car"
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "exit_lead_skid_pad_time",
               "title": "Time Student Exits Skid Pad Car"
             }
@@ -382,13 +398,15 @@ export const json = {
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "enter_skid_pad_time",
               "title": "Time Student Enters Skid Pad Car"
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "exit_skid_pad_time",
               "title": "Time Student Exits Skid Pad Car"
             }
@@ -419,13 +437,15 @@ export const json = {
           "elements": [
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "enter_lead_hot_lap_time",
               "title": "Time Student Enters Hot Lap Car"
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "exit_lead_hot_lap_time",
               "title": "Time Student Exits Hot Lap Car"
             },
@@ -464,13 +484,15 @@ export const json = {
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "enter_hot_lap_time",
               "title": "Time Student Enters Hot Lap Car"
             },
             {
               "type": "text",
-              "inputType": "time",
+              "inputMask": "datetime",
+              "inputFormat": "hh:mm:ss",
               "name": "exit_hot_lap_time",
               "title": "Time Student Exits Hot Lap Car"
             },
