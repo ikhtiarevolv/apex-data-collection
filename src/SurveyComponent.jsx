@@ -6,7 +6,7 @@ import 'inputmask/dist/inputmask/phone-codes/phone';
 import { StylesManager, Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 
-import "survey-core/defaultV2.css";
+import "survey-core/survey.css";
 import "./index.css";
 import { json } from "./json"
 
@@ -15,7 +15,7 @@ import * as SurveyReact from "survey-react-ui";
 import * as widgets from "surveyjs-widgets";
 window["$"] = window["jQuery"] = $;
 
-StylesManager.applyTheme("defaultV2");
+StylesManager.applyTheme("default");
 widgets.inputmask(SurveyCore);
 
 function SurveyComponent() {
