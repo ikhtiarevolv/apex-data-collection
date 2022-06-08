@@ -238,7 +238,6 @@ export const json = {
                   "name": "follow_assigned_car",
                   "isRequired": true,
                   "title": "Follow Car Number",
-                  "isRequired": false
                 },
                 {
                   "type": "text",
