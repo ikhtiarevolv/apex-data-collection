@@ -113,18 +113,18 @@
 //                   "Honolulu"
 //                 ]
 //               },
-//               {
-//                 "type": "radiogroup",
-//                 "name": "class",
-//                 "title": "Class",
-//                 "isRequired": false,
-//                 "hasNone": false,
-//                 "colCount": 1,
-//                 "choices": [
-//                   "Performance",
-//                   "Master Class"
-//                 ]
-//               },
+              // {
+              //   "type": "radiogroup",
+              //   "name": "class",
+              //   "title": "Class",
+              //   "isRequired": false,
+              //   "hasNone": false,
+              //   "colCount": 1,
+              //   "choices": [
+              //     "Performance",
+              //     "Master Class"
+              //   ]
+              // },
 //               {
 //                 "type": "radiogroup",
 //                 "name": "venue",
@@ -537,7 +537,7 @@ export const json = {
          "type": "dropdown",
          "name": "timezones",
          "title": "Time Zone of Time Entries",
-         "isRequired": false,
+         "isRequired": true,
          "colCount": 0,
          "hasNone": false,
          "choices": [
@@ -577,7 +577,7 @@ export const json = {
          "type": "radiogroup",
          "name": "venue",
          "title": "Venue",
-         "isRequired": false,
+         "isRequired": true,
          "hasNone": false,
          "colCount": 1,
          "choices": [
@@ -592,7 +592,7 @@ export const json = {
          "type": "radiogroup",
          "name": "class",
          "title": "Class",
-         "isRequired": false,
+         "isRequired": true,
          "hasNone": false,
          "colCount": 1,
          "choices": [
@@ -603,20 +603,17 @@ export const json = {
          ]
        },
        {
-         "type": "radiogroup",
-         "name": "venue",
-         "title": "Venue",
-         "isRequired": false,
-         "hasNone": false,
-         "colCount": 1,
-         "choices": [
-           "WeatherTech Raceway Laguna Seca",
-           "Michelin Raceway Road Atlanta",
-           "Circuit of Americas",
-           "Road America",
-           "Indianapolis Motor Speedway"
-         ]
-       },
+        "type": "radiogroup",
+        "name": "class",
+        "title": "Class",
+        "isRequired": true,
+        "hasNone": false,
+        "colCount": 1,
+        "choices": [
+          "Performance",
+          "Master Class"
+        ]
+      },
      ]
 
    },  
@@ -633,12 +630,14 @@ export const json = {
            "templateElements": [
              {
                "type": "text",
+               "isRequired": true,
                "name": "first_name",
                "title": "First Name"
              },
              {
                "type": "text",
                "name": "last_name",
+               "isRequired": true,
                "startWithNewLine": false,
                "title": "Last Name"
              },
@@ -649,25 +648,28 @@ export const json = {
                  {
                    "type": "text",
                    "name": "email",
+                   "isRequired": true,
                    "title": "Email",
                    "inputType": "email"
                  },
                  {
                    "type": "text",
                    "name": "phone_number",
+                   "isRequired": true,
                    "title": "Phone Number",
                    "inputType": "tel"
                  },
                  {
                    "type": "text",
                    "name": "vin",
+                   "isRequired": true,
                    "title": "Enter Assigned Car (VIN)",
                  },
                  {
                    "type": "text",
                    "name": "assigned_car",
                    "title": "Assigned Car Number",
-                   "isRequired": false
+                   "isRequired": true
                  },
                ],
                "title": "Contact Info",
@@ -693,18 +695,20 @@ export const json = {
                 {
                   "type": "text",
                   "name": "vin",
+                  "isRequired": true,
                   "title": "Enter Autocross Car (VIN)",
                 },
                 {
                   "type": "text",
                   "name": "assigned_car",
                   "title": "Autocross Car Number",
-                  "isRequired": false
+                  "isRequired": true,
                 },
                 {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "hh:mm:ss",
+                  "isRequired": true,
                   "name": "enter_lead_autocross_time",
                   "title": "Time Student Enters Autocross Car"
                 },
@@ -712,6 +716,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "hh:mm:ss",
+                  "isRequired": true,
                   "name": "exit_lead_autocross_time",
                   "title": "Time Student Exits Autocross Car"
                 },
@@ -719,6 +724,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "mm:ss",
+                  "isRequired": true,
                   "name": "best_lap_time",
                   "title": "Best Lap Time After Penalties"
                 }
@@ -746,11 +752,13 @@ export const json = {
                 {
                   "type": "text",
                   "name": "vin",
+                  "isRequired": true,
                   "title": "Enter Follow Car (VIN)",
                 },
                 {
                   "type": "text",
                   "name": "assigned_car",
+                  "isRequired": true,
                   "title": "Follow Car Number",
                   "isRequired": false
                 },
@@ -758,6 +766,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "hh:mm:ss",
+                  "isRequired": true,
                   "name": "enter_lead_follow_time",
                   "title": "Time Student Enters Follow Car"
                 },
@@ -765,6 +774,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "hh:mm:ss",
+                  "isRequired": true,
                   "name": "exit_lead_follow_time",
                   "title": "Time Student Exits Follow Car"
                 },
@@ -772,6 +782,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "mm:ss",
+                  "isRequired": true,
                   "name": "best_lap_time",
                   "title": "Best Lap Time After Penalties"
                 }
@@ -799,18 +810,20 @@ export const json = {
                 {
                   "type": "text",
                   "name": "vin",
+                  "isRequired": true,
                   "title": "Enter Skid Pad Car (VIN)",
                 },
                 {
                   "type": "text",
                   "name": "assigned_car",
                   "title": "Skid Pad Car Number",
-                  "isRequired": false
+                  "isRequired": true
                 },
                 {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "hh:mm:ss",
+                  "isRequired": true,
                   "name": "enter_lead_skid_pad_time",
                   "title": "Time Student Enters Skid Pad Car"
                 },
@@ -818,6 +831,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "hh:mm:ss",
+                  "isRequired": true,
                   "name": "exit_lead_skid_pad_time",
                   "title": "Time Student Exits Skid Pad Car"
                 },
@@ -825,6 +839,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "mm:ss",
+                  "isRequired": true,
                   "name": "best_lap_time",
                   "title": "Best Lap Time After Penalties"
                 }
@@ -852,18 +867,20 @@ export const json = {
                 {
                   "type": "text",
                   "name": "vin",
+                  "isRequired": true,
                   "title": "Enter Hot Lap Car (VIN)",
                 },
                 {
                   "type": "text",
                   "name": "assigned_car",
                   "title": "Hot Lap Car Number",
-                  "isRequired": false
+                  "isRequired": true
                 },
                 {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "hh:mm:ss",
+                  "isRequired": true,
                   "name": "enter_lead_hot_lap_time",
                   "title": "Time Student Enters Hot Lap Car"
                 },
@@ -871,6 +888,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "hh:mm:ss",
+                  "isRequired": true,
                   "name": "exit_lead_hot_lap_time",
                   "title": "Time Student Exits Hot Lap Car"
                 },
@@ -878,6 +896,7 @@ export const json = {
                   "type": "text",
                   "inputMask": "datetime",
                   "inputFormat": "mm:ss",
+                  "isRequired": true,
                   "name": "best_lap_time",
                   "title": "Best Lap Time After Penalties"
                 }
