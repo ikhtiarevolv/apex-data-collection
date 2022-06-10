@@ -65,35 +65,8 @@ export const json = {
            "Road America",
            "Indianapolis Motor Speedway"
          ]
-       },
-       {
-         "type": "radiogroup",
-         "name": "class",
-         "title": "Class",
-         "isRequired": true,
-         "hasNone": false,
-         "colCount": 1,
-         "choices": [
-           "Carbon",
-           "Green",
-           "Yellow",
-           "Red"
-         ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "class",
-        "title": "Class",
-        "isRequired": true,
-        "hasNone": false,
-        "colCount": 1,
-        "choices": [
-          "Performance",
-          "Master Class"
-        ]
-      },
+       }
      ]
-
    },  
    {
         "name": "page2",
@@ -116,9 +89,35 @@ export const json = {
                "type": "text",
                "name": "last_name",
                "isRequired": true,
-               "startWithNewLine": false,
+               "startWithNewLine": true,
                "title": "Last Name"
              },
+             {
+              "type": "radiogroup",
+              "name": "group",
+              "title": "Group",
+              "isRequired": true,
+              "hasNone": false,
+              "colCount": 1,
+              "choices": [
+                "Carbon",
+                "Green",
+                "Yellow",
+                "Red"
+              ]
+            },
+            {
+             "type": "radiogroup",
+             "name": "class",
+             "title": "Class",
+             "isRequired": true,
+             "hasNone": false,
+             "colCount": 1,
+             "choices": [
+               "Performance",
+               "Master Class"
+             ]
+           },
              {
                "type": "panel",
                "name": "contact_info",
@@ -133,7 +132,7 @@ export const json = {
                  {
                    "type": "text",
                    "name": "phone_number",
-                   "isRequired": true,
+                   "isRequired": false,
                    "title": "Phone Number",
                    "inputType": "tel"
                  },
@@ -166,21 +165,21 @@ export const json = {
                   "hasNone": false,
                   "colCount": 1,
                   "choices": [
-                    "Another Car",
-                    "Assigned Car"
+                    "Assigned Car",
+                    "Another Car - Please enter car information"
                   ]
                 },
                 {
                   "type": "text",
                   "name": "autocross_vin",
-                  "isRequired": true,
+                  "isRequired": false,
                   "title": "Enter Autocross Car (VIN)",
                 },
                 {
                   "type": "text",
                   "name": "autocross__car_number",
                   "title": "Autocross Car Number",
-                  "isRequired": true,
+                  "isRequired": false,
                 },
                 {
                   "type": "text",
@@ -223,20 +222,20 @@ export const json = {
                   "hasNone": false,
                   "colCount": 1,
                   "choices": [
-                    "Another Car",
-                    "Assigned Car"
+                    "Assigned Car",
+                    "Another Car - Please enter car information"
                   ]
                 },
                 {
                   "type": "text",
                   "name": "follow_vin",
-                  "isRequired": true,
+                  "isRequired": false,
                   "title": "Enter Follow Car (VIN)",
                 },
                 {
                   "type": "text",
                   "name": "follow_assigned_car",
-                  "isRequired": true,
+                  "isRequired": false,
                   "title": "Follow Car Number",
                 },
                 {
@@ -254,14 +253,6 @@ export const json = {
                   "isRequired": true,
                   "name": "exit_lead_follow_time",
                   "title": "Time Student Exits Follow Car"
-                },
-                {
-                  "type": "text",
-                  "inputMask": "datetime",
-                  "inputFormat": "mm:ss",
-                  "isRequired": true,
-                  "name": "follow_best_lap_time",
-                  "title": "Best Lap Time After Penalties"
                 }
               ],
               "title": "Follow Car",
@@ -280,21 +271,21 @@ export const json = {
                   "hasNone": false,
                   "colCount": 1,
                   "choices": [
-                    "Another Car",
-                    "Assigned Car"
+                    "Assigned Car",
+                    "Another Car - Please enter car information"
                   ]
                 },
                 {
                   "type": "text",
                   "name": "skid_vin",
-                  "isRequired": true,
+                  "isRequired": false,
                   "title": "Enter Skid Pad Car (VIN)",
                 },
                 {
                   "type": "text",
                   "name": "skid_assigned_car",
                   "title": "Skid Pad Car Number",
-                  "isRequired": true
+                  "isRequired": false
                 },
                 {
                   "type": "text",
@@ -311,14 +302,6 @@ export const json = {
                   "isRequired": true,
                   "name": "exit_lead_skid_pad_time",
                   "title": "Time Student Exits Skid Pad Car"
-                },
-                {
-                  "type": "text",
-                  "inputMask": "datetime",
-                  "inputFormat": "mm:ss",
-                  "isRequired": true,
-                  "name": "skid_best_lap_time",
-                  "title": "Best Lap Time After Penalties"
                 }
               ],
               "title": "Skid Pad Car",
@@ -337,21 +320,21 @@ export const json = {
                   "hasNone": false,
                   "colCount": 1,
                   "choices": [
-                    "Another Car",
-                    "Assigned Car"
+                    "Assigned Car",
+                    "Another Car - Please enter car information"
                   ]
                 },
                 {
                   "type": "text",
                   "name": "hot_vin",
-                  "isRequired": true,
+                  "isRequired": false,
                   "title": "Enter Hot Lap Car (VIN)",
                 },
                 {
                   "type": "text",
                   "name": "hot_assigned_car",
                   "title": "Hot Lap Car Number",
-                  "isRequired": true
+                  "isRequired": false
                 },
                 {
                   "type": "text",
@@ -368,14 +351,6 @@ export const json = {
                   "isRequired": true,
                   "name": "exit_lead_hot_lap_time",
                   "title": "Time Student Exits Hot Lap Car"
-                },
-                {
-                  "type": "text",
-                  "inputMask": "datetime",
-                  "inputFormat": "mm:ss",
-                  "isRequired": true,
-                  "name": "hot_best_lap_time",
-                  "title": "Best Lap Time After Penalties"
                 }
               ],
               "title": "Hot Lap Car",
